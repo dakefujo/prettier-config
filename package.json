@@ -1,0 +1,40 @@
+{
+    "name": "@d-gs/prettier-config",
+    "version": "0.1.0",
+    "description": "Prettier Config.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "author": "__d",
+    "license": "MIT",
+    "keywords": [
+        "prettier",
+        "config",
+        "css",
+        "scss"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/glamseam/prettier-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/glamseam/prettier-config/issues"
+    },
+    "scripts": {
+        "build": "tsc",
+        "pub": "pnpm build && npm publish --access=public"
+    },
+    "peerDependencies": {
+        "prettier": "^3.0.0"
+    },
+    "dependencies": {
+        "@volar/vue-typescript": "^1.6.5",
+        "prettier": "^3.2.5",
+        "prettier-plugin-organize-imports": "^3.2.4"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    }
+}
