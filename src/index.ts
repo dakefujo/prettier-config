@@ -12,4 +12,4 @@ const config: Config = {
     singleAttributePerLine: true
 }
 
-export default config
+export = config
