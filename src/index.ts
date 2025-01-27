@@ -1,6 +1,6 @@
 import { type Config } from 'prettier'
 
-const config: Config = {
+export const defaultConfig: Config = {
     plugins: ['prettier-plugin-organize-imports'],
     printWidth: 80,
     trailingComma: 'none',
@@ -17,5 +17,3 @@ const config: Config = {
         }
     ]
 }
-
-export = config
