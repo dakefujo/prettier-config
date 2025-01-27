@@ -1,13 +1,22 @@
 {
+    "type": "module",
     "name": "@dakefujo/prettier-config",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Prettier config.",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
     "files": [
         "dist"
     ],
-    "author": "dakefujo",
+    "author": "Dake Fujo",
     "license": "MIT",
     "keywords": [
         "prettier",
@@ -21,7 +30,7 @@
     },
     "packageManager": "pnpm@9.15.4",
     "scripts": {
-        "build": "tsc",
+        "build": "unbuild",
         "pub": "pnpm build && npm publish --access=public"
     },
     "peerDependencies": {
@@ -37,7 +46,9 @@
         "prettier-plugin-organize-imports": "^4.1.0"
     },
     "devDependencies": {
+        "@dakefujo/ts-config": "^1.0.0",
         "typescript": "^5.7.3",
+        "unbuild": "^3.3.1",
         "vue-tsc": "^2.2.0"
     }
 }
